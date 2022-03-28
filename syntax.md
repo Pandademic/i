@@ -342,11 +342,11 @@ The types of collections are [arrays](#arrays), [ranges](#ranges), [tuples](#tup
 
 Doing a scalar operation on an array, tuple, dictionary, matrix or string, with scalar items result in a new one where the operation is done on all of its items.
 
-## `attach collection with separator`
+## `concat collection with separator`
 A string containing the stringified versions of all items from `collection` in order, separated with `separator`, which can be a pattern (see [Patterns](#patterns)).
 
-## `attach collection`
-`attach collection with ', '`.
+## `concat collection`
+`concat collection with ', '`.
 
 ## `* collection`
 Syntactically expand `collection`.
