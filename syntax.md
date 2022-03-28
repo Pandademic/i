@@ -64,7 +64,7 @@ Addition.
 Multiplication.
 
 ## `x ** y`
-Exponentiation.#
+Exponentiation.
 
 ## `x *** y`
 * `x * 2**y` for binary literals
