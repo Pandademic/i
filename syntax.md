@@ -342,17 +342,14 @@ The types of collections are [arrays](#arrays), [ranges](#ranges), [tuples](#tup
 
 Doing a scalar operation on an array, tuple, dictionary, matrix or string, with scalar items result in a new one where the operation is done on all of its items.
 
-## `join collection with separator`
+## `attach collection with separator`
 A string containing the stringified versions of all items from `collection` in order, separated with `separator`, which can be a pattern (see [Patterns](#patterns)).
 
-## `join collection`
-`join collection with x`, where `x` is a collection-type-based separator: `', '` for most collection types.
-
-## `str collection`
-`join collection with ''`.
+## `attach collection`
+`attach collection with ', '`.
 
 ## `* collection`
-Expand `collection` depending on the expression being expanded in.
+Syntactically expand `collection`.
 
 # Arrays
 
@@ -522,7 +519,7 @@ Range from `x` to `z` each `y` steps.
 `0..z`.
 
 ## `r#i`
-The integer #`i` in `r`.
+The `i`th integer in `r`.
 
 ## `x, y, etc = r`
 Range destructuring: `x = r#1`, `y = r#2`, etc.
