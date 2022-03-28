@@ -338,7 +338,7 @@ Whether only one of `x` and `y` is true.
 
 # Collections
 
-The types of collections are [arrays](#arrays), [ranges](#ranges), [tuples](#tuples), [sets](#sets), [dictionaries](#dictionaries), [matrices](#matrices), [strings](#strings), [enumerators](#enumerators--enumerals), [bit fields](#<#Bit Fields>), [paths](#paths), [files](#files), [streams](#streams) and [classes](#classes). All of them are iterable (see [Streams](#streams)).
+The types of collections are [arrays](#arrays), [ranges](#ranges), [tuples](#tuples), [sets](#sets), [dictionaries](#dictionaries), [matrices](#matrices), [strings](#strings), [enumerators](#enumerators--enumerals), [bit fields](#bit-fields), [paths](#paths), [files](#files), [streams](#streams) and [classes](#classes). All of them are iterable (see [Streams](#streams)).
 
 Doing a scalar operation on an array, tuple, dictionary, matrix or string, with scalar items result in a new one where the operation is done on all of its items.
 
