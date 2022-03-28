@@ -1,3 +1,49 @@
+# Table of Contents
+
+* [Comments](#Comments)
+* [Null](#Null)
+* [Numbers](#Numbers)
+* [Booleans](#Booleans)
+* [Collections](#Collections)
+* [Arrays](#Arrays)
+* [Ranges](#Ranges)
+* [Tuples](#Tuples)
+* [Sets](#Sets)
+* [Dictionaries](#Dictionaries)
+* [Matrices](#Matrices)
+* [Strings](#Strings)
+* [Patterns](#Patterns)
+* [Formats](#Formats)
+* [Enumerators & Enumerals](<#Enumerators & Enumerals>)
+* [Bit Fields](<#Bit Fields>)
+* [Versions](#Versions)
+* [Memory Blocks](<#Memory Blocks>)
+* [Paths](#Paths)
+* [Files](#Files)
+* [Stdout, Stdin & Stderr](<#Stdout, Stdin & Stderr>)
+* [Streams](#Streams)
+* [Sockets](#Sockets)
+* [IPv4 Packets](<#IPv4 Packets>)
+* [IPv4 Options](<#IPv4 Options>)
+* [IPv4 Addresses](<#IPv4 Addresses>)
+* [IPv6 Packets](<#IPv6 Packets>)
+* [IPv6 Addresses](<#IPv6 Addresses>)
+* [ICMP Packets](<#ICMP Packets>)
+* [ICMPv6 Packets](<#ICMPv6 Packets>)
+* [Times](#Times)
+* [Progresses](#Progresses)
+* [Exceptions](#Exceptions)
+* [Routines](#Routines)
+* [Classes](#Classes)
+* [Identifiers](#Identifiers)
+* [Control Flow](<#Control Flow>)
+* [Blocks](#Blocks)
+* [Conversions](#Conversions)
+* [Falsy Objects](<#Falsy Objects>)
+* [External Code](<#External Code>)
+* [Modules](#Modules)
+* [Miscellaneous](#Miscellaneous)
+
 # Comments
 
 ## `\...`
@@ -1222,7 +1268,7 @@ Copy `f1` to `f2`.
 ## `rename f to name`
 Rename `f` to `name`.
 
-# Stdout, Stdin and Stderr
+# Stdout, Stdin & Stderr
 
 ## `write x`
 Write `x` to stdout.
@@ -1383,6 +1429,26 @@ Whether `o`'s Copied field is set.
 ## `o.data`
 `o`'s data.
 
+# IPv4 Addresses
+
+## `ipv4addr`
+The IPv4 address type.
+
+## `ipv4addr c`
+An IPv4 address from the collection, `c`.
+
+## `a#i`
+The `i`th of 4 divided numbers of the address, `a`.
+
+## `a#a_range`
+An array of the divided numbers of `a` in the range, `a_range`.
+
+## `a#i = x`
+Set `a#i` to `x`.
+
+## `a#a_range = x`
+Set `a#a_range` to the array, `x`.
+
 # IPv6 Packets
 
 IPv6 packets are mudictionary.
@@ -1419,26 +1485,6 @@ An IPv6 packet from the collection, `c`.
 
 ## `p.payload`
 `p`'s payload.
-
-# IPv4 Addresses
-
-## `ipv4addr`
-The IPv4 address type.
-
-## `ipv4addr c`
-An IPv4 address from the collection, `c`.
-
-## `a#i`
-The `i`th of 4 divided numbers of the address, `a`.
-
-## `a#a_range`
-An array of the divided numbers of `a` in the range, `a_range`.
-
-## `a#i = x`
-Set `a#i` to `x`.
-
-## `a#a_range = x`
-Set `a#a_range` to the array, `x`.
 
 # IPv6 Addresses
 
@@ -1647,7 +1693,7 @@ The difference, in milliseconds, between the times: `x` and `y`; it can be negat
 ## `time c`
 A time from the collection, `c`.
 
-# Progress
+# Progresses
 
 ## `progress`
 The progress type, or a progress with the default format.
