@@ -81,7 +81,7 @@ Numeral examples:
 * `-0b101` — a binary literal
 * `0 + 0o377i` — a complex numeral from a decimal and an octal; `0+` can be omitted here.
 * `1_000_000` — like 1,000,000
-* `2.9979***8` — a decimal multiplied by 10 to the 8th (see [x *** y](#x--y-2>)
+* `2.9979***8` — a decimal multiplied by 10 to the 8th (see [x *** y](#x--y-2))
 * `0x4.0f` — a hexadecimal with a point; note here that all kinds of numerals can have points, not just decimals
 
 Integer numerals are `int`s/`bigint`s, and floating-point numerals are `real`s/`bigreal`s.
