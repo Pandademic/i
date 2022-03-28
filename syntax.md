@@ -1,48 +1,48 @@
 # Table of Contents
 
-* [Comments](#Comments)
-* [Null](#Null)
-* [Numbers](#Numbers)
-* [Booleans](#Booleans)
-* [Collections](#Collections)
-* [Arrays](#Arrays)
-* [Ranges](#Ranges)
-* [Tuples](#Tuples)
-* [Sets](#Sets)
-* [Dictionaries](#Dictionaries)
-* [Matrices](#Matrices)
-* [Strings](#Strings)
-* [Patterns](#Patterns)
-* [Formats](#Formats)
-* [Enumerators & Enumerals](#Enumerators--Enumerals)
-* [Bit Fields](#Bit-Fields)
-* [Versions](#Versions)
-* [Memory Blocks](#Memory-Blocks)
-* [Paths](#Paths)
-* [Files](#Files)
-* [Stdout, Stdin & Stderr](#Stdout-Stdin--Stderr)
-* [Streams](#Streams)
-* [Sockets](#Sockets)
-* [IPv4 Packets](#IPv4-Packets)
-* [IPv4 Options](#IPv4-Options)
-* [IPv4 Addresses](#IPv4-Addresses)
-* [IPv6 Packets](#IPv6-Packets)
-* [IPv6 Addresses](#IPv6-Addresses)
-* [ICMP Packets](#ICMP-Packets)
-* [ICMPv6 Packets](#ICMPv6-Packets)
-* [Times](#Times)
-* [Progresses](#Progresses)
-* [Exceptions](#Exceptions)
-* [Routines](#Routines)
-* [Classes](#Classes)
-* [Identifiers](#Identifiers)
-* [Control Flow](#Control-Flow)
-* [Blocks](#Blocks)
-* [Conversions](#Conversions)
-* [Falsy Objects](#Falsy-Objects)
-* [External Code](#External-Code)
-* [Modules](#Modules)
-* [Miscellaneous](#Miscellaneous)
+* [Comments](#comments)
+* [Null](#null)
+* [Numbers](#numbers)
+* [Booleans](#booleans)
+* [Collections](#collections)
+* [Arrays](#arrays)
+* [Ranges](#ranges)
+* [Tuples](#tuples)
+* [Sets](#sets)
+* [Dictionaries](#dictionaries)
+* [Matrices](#matrices)
+* [Strings](#strings)
+* [Patterns](#patterns)
+* [Formats](#formats)
+* [Enumerators & Enumerals](#enumerators--enumerals)
+* [Bit Fields](#bit-fields)
+* [Versions](#versions)
+* [Memory Blocks](#memory-blocks)
+* [Paths](#paths)
+* [Files](#files)
+* [Stdout, Stdin & Stderr](#stdout-Stdin--Stderr)
+* [Streams](#streams)
+* [Sockets](#sockets)
+* [IPv4 Packets](#iPv4-packets)
+* [IPv4 Options](#iPv4-options)
+* [IPv4 Addresses](#iPv4-addresses)
+* [IPv6 Packets](#iPv6-packets)
+* [IPv6 Addresses](#iPv6-addresses)
+* [ICMP Packets](#iCMP-packets)
+* [ICMPv6 Packets](#iCMPv6-packets)
+* [Times](#times)
+* [Progresses](#progresses)
+* [Exceptions](#exceptions)
+* [Routines](#routines)
+* [Classes](#classes)
+* [Identifiers](#identifiers)
+* [Control Flow](#control-flow)
+* [Blocks](#blocks)
+* [Conversions](#conversions)
+* [Falsy Objects](#falsy-objects)
+* [External Code](#external-code)
+* [Modules](#modules)
+* [Miscellaneous](#miscellaneous)
 
 # Comments
 
@@ -81,7 +81,7 @@ Numeral examples:
 * `-0b101` — a binary literal
 * `0 + 0o377i` — a complex numeral from a decimal and an octal; `0+` can be omitted here.
 * `1_000_000` — like 1,000,000
-* `2.9979***8` — a decimal multiplied by 10 to the 8th (see [x *** y](<##x *** y>))
+* `2.9979***8` — a decimal multiplied by 10 to the 8th (see [x *** y](#x--y-2>)
 * `0x4.0f` — a hexadecimal with a point; note here that all kinds of numerals can have points, not just decimals
 
 Integer numerals are `int`s/`bigint`s, and floating-point numerals are `real`s/`bigreal`s.
@@ -338,12 +338,12 @@ Whether only one of `x` and `y` is true.
 
 # Collections
 
-The types of collections are [arrays](#Arrays), [ranges](#Ranges), [tuples](#Tuples), [sets](#Sets), [dictionaries](#Dictionaries), [matrices](#Matrices), [strings](#Strings), [enumerators](<#Enumerators & Enumerals>), [bit fields](<#Bit Fields>), [paths](#Paths), [files](#Files), [streams](#Streams) and [classes](#Classes). All of them are iterable (see [Streams](#Streams)).
+The types of collections are [arrays](#arrays), [ranges](#ranges), [tuples](#tuples), [sets](#sets), [dictionaries](#dictionaries), [matrices](#matrices), [strings](#strings), [enumerators](#enumerators--enumerals), [bit fields](#<#Bit Fields>), [paths](#paths), [files](#files), [streams](#streams) and [classes](#classes). All of them are iterable (see [Streams](#streams)).
 
 Doing a scalar operation on an array, tuple, dictionary, matrix or string, with scalar items result in a new one where the operation is done on all of its items.
 
 ## `join collection with separator`
-A string containing the stringified versions of all items from `collection` in order, separated with `separator`, which can be a pattern (see [Patterns](#Patterns)).
+A string containing the stringified versions of all items from `collection` in order, separated with `separator`, which can be a pattern (see [Patterns](#patterns)).
 
 ## `join collection`
 `join collection with x`, where `x` is a collection-type-based separator: `', '` for most collection types.
@@ -867,10 +867,10 @@ A slice of `s`.
 An unsigned integer array of the codes of the characters in `s#a_range`.
 
 ## `s at substring`
-An array containing all indices of `substring` in `s`. `substring` can be a pattern (see [Pattern](#Pattern) for more details).
+An array containing all indices of `substring` in `s`. `substring` can be a pattern (see [Patterns](#patterns) for more details).
 
 ## `s at substring = new_substring`
-A copy of `s` where all occurences of `substring` are replaced with `new_substring`. `substring` can be a pattern (see [Pattern](#Pattern) for more details).
+A copy of `s` where all occurences of `substring` are replaced with `new_substring`. `substring` can be a pattern (see [Patterns](#patterns) for more details).
 
 ## `s1 s2`
 A string resulting from the concatenation of `s1` and `s2` respectively.
@@ -966,10 +966,10 @@ Whether all characters in `s` are prindictionary, or `false` if `s` is empty.
 Whether all characters in `s` are whitespace, or `false` if `s` is empty.
 
 ## `split s with separator`
-An array containing all the subtrings in `s` separated by `separator`, which can be a pattern (see [Patterns](#Patterns)).
+An array containing all the subtrings in `s` separated by `separator`, which can be a pattern (see [Patterns](#patterns)).
 
 ## `split s`
-`split s with ',' ' '+` (see [Patterns](#Patterns)).
+`split s with ',' ' '+` (see [Patterns](#patterns)).
 
 ## `trim s`
 `s` with no whitespace at the start and end.
@@ -1239,7 +1239,7 @@ Insert each character in stringified `x`, in the boundary of `f#a_range`.
 A string containing all characters in `f`.
 
 ## `stream f`
-A stream of all characters in `f` (see [Streams](#Streams)).
+A stream of all characters in `f` (see [Streams](#streams)).
 
 ## `f.x`
 The file named, `x`, inside the directory `f`; `x` can be a name or string.
@@ -1328,7 +1328,7 @@ The supported network protocols out of the box are `ipv4`, `ipv6`...
 The socket type.
 
 ## `socket path procedure`
-A socket following the protocol in `path`, immediately connected to `path` (see [Paths](#Paths)), that calls `procedure` whenever it receives data; `procedure` must be of type:
+A socket following the protocol in `path`, immediately connected to `path` (see [Paths](#paths)), that calls `procedure` whenever it receives data; `procedure` must be of type:
 * `ipv4packet -|` if the protocol is `ipv4`
 * `ipv6packet -|` if the protocol is `ipv6`
 * `icmppacket -|` if the protocol is `icmp`
@@ -1383,7 +1383,7 @@ Whether `p`'s MF flag is set.
 `p`'s TTL.
 
 ## `p.protocol`
-`p`'s protocol; can be `ICMP`, `IGMP`, `TCP`, `UDP`, `ENCAP`, `OSPTF` or `SCTP`, which are of type `ipprotocol` (see [Enumerators & Enumerals](<#Enumerators & Enumerals>)).
+`p`'s protocol; can be `ICMP`, `IGMP`, `TCP`, `UDP`, `ENCAP`, `OSPTF` or `SCTP`, which are of type `ipprotocol` (see [Enumerators & Enumerals](#enumerators--enumerals)).
 
 ## `p.checksum`
 `p`'s header checksum.
@@ -1424,7 +1424,7 @@ Whether `o`'s Copied field is set.
 `o`'s number.
 
 ## `o.type`
-`o`'s type; can only be `EOOL`, `NOP`, `SEC`, `RR`, `ZSU`, `MTUP`, `MTUR`, `ENCODE`, `QS`, `EXP`, `TS`, `TR`, `EXP`, `SEC`, `LSR`, `E-SEC`, `CIPSO`, `SID`, `SSR`, `VISA`, `IMITD`, `EIP`, `ADDEXT`, `RTRALT`, `SDB`, `DPS`, `UMP`, `EXP`, `FINN` or `EXP`, which are of type `ipopttype` (see [Enumerators & Enumerals](<#Enumerators & Enumerals>)).
+`o`'s type; can only be `EOOL`, `NOP`, `SEC`, `RR`, `ZSU`, `MTUP`, `MTUR`, `ENCODE`, `QS`, `EXP`, `TS`, `TR`, `EXP`, `SEC`, `LSR`, `E-SEC`, `CIPSO`, `SID`, `SSR`, `VISA`, `IMITD`, `EIP`, `ADDEXT`, `RTRALT`, `SDB`, `DPS`, `UMP`, `EXP`, `FINN` or `EXP`, which are of type `ipopttype` (see [Enumerators & Enumerals](#enumerators--enumerals)).
 
 ## `o.data`
 `o`'s data.
@@ -1658,7 +1658,7 @@ The 24-hour of `t`.
 The 12-hour of `t`.
 
 ## `t.phase`
-The phase of `t`: either `AM` or `PM` (see [Enumerators & Enumerals](<#Enumerators & Enumerals>)).
+The phase of `t`: either `AM` or `PM` (see [Enumerators & Enumerals](#enumerators--enumerals)).
 
 ## `t.wkd`
 The week day of `t`.
@@ -1791,7 +1791,7 @@ Call `f` with the argument, `x`, passed to the first parameter, and the argument
 Block the process until `call` returns a value, then return that.
 
 ## `#n`
-The `n`th function argument—inside functions, or the `n`th command line argument—inside the global scope; command line arguments are processed (also see [.x](<##.x>)).
+The `n`th function argument—inside functions, or the `n`th command line argument—inside the global scope; command line arguments are processed (also see [.x](#x-5)).
 
 ## `.x`
 The function argument whose parameter is named, `x`—inside functions, or the command line argument whose parameter is named, `x`—inside the global scope.
@@ -1806,7 +1806,7 @@ Return `x`.
 `f = async parameters -> expression`
 
 ## `f parameters block`
-`f = parameters -> (block)` (see [Blocks](#Blocks)).
+`f = parameters -> (block)` (see [Blocks](#blocks)).
 
 ## `async f parameters block`
 `f = async parameters -> (block)`.
@@ -1819,7 +1819,7 @@ Classes are user-defined types. Class parameters or constructor parameters follo
 A class named, `c`, whose constructor takes `parameters`, and evaluates `expression` in its scope.
 
 ## `default c`
-`c`'s default value identifier (see [Identifiers](#Identifiers)); when assigned (`default c = x`), declared identifiers of type `c` are automatically assigned it.
+`c`'s default value identifier (see [Identifiers](#identifiers)); when assigned (`default c = x`), declared identifiers of type `c` are automatically assigned it.
 
 ## Class Parameters
 Class parameters look like `@x` or `&x` where `x` is the name of the parameter and property/attribute to be assigned whatever argument is passed to the parameter, when the class is instanciated.
@@ -1880,7 +1880,7 @@ An identifier named, `i`, that can't be reassigned.
 
 # Control Flow
 
-See [Streams](#Streams) for for-in loop syntax. All loops return an array of evaluated `block`s in each iteration.
+See [Streams](#streams) for for-in loop syntax. All loops return an array of evaluated `block`s in each iteration.
 
 ## `if x block`
 If `x` is true, evaluate `block`. This is always a statement.
