@@ -294,7 +294,7 @@ Whether only one of `x` and `y` is true.
 
 The types of collections are [arrays](#Arrays), [ranges](#Ranges), [tuples](#Tuples), [sets](#Sets), [dictionaries](#Dictionaries), [matrices](#Matrices), [strings](#Strings), [enumerators](<#Enumerators & Enumerals>), [bit fields](<#Bit Fields>), [paths](#Paths), [files](#Files), [streams](#Streams) and [classes](#Classes). All of them are iterable (see [Streams](#Streams)).
 
-Doing a scalar operation on a collection (except a set) with scalar items result in a new one where the operation is done on all of its items.
+Doing a scalar operation on an array, tuple, dictionary, matrix or string, with scalar items result in a new one where the operation is done on all of its items.
 
 ## `join collection with separator`
 A string containing the stringified versions of all items from `collection` in order, separated with `separator`, which can be a pattern (see [Patterns](#Patterns)).
