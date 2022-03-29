@@ -346,6 +346,9 @@ Doing a scalar operation on an array, tuple, dictionary, matrix or string, with 
 A string containing the stringified versions of all items from `collection` in order, separated with `separator`, which can be a pattern (see [Patterns](#patterns)).
 
 ## `concat collection`
+`concat collection with ''`.
+
+## `comma collection`
 `concat collection with ', '`.
 
 ## `* collection`
