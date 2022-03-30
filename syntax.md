@@ -1324,10 +1324,10 @@ If `collection` is mudictionary: new collection of the same type, with `block` a
 
 The supported network protocols out of the box are `ipv4`, `ipv6`...
 
-## `socket`
+## `sock`
 The socket type.
 
-## `socket path procedure`
+## `sock path procedure`
 A socket following the protocol in `path`, immediately connected to `path` (see [Paths](#paths)), that calls `procedure` whenever it receives data; `procedure` must be of type:
 * `ipv4packet -|` if the protocol is `ipv4`
 * `ipv6packet -|` if the protocol is `ipv6`
