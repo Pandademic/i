@@ -2007,7 +2007,7 @@ The value of the environmental variable, `x`.
 Process command line arguments through `parameters` into the current namespace.
 
 ## `base i`
-Set the index base to the positive integer, `i`, in the current scope.
+Set the index base to the non-negative integer, `i`, in the current scope.
 
 ## `async expression`
 Evaluate `expression` asynchronously.
