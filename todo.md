@@ -1,0 +1,3 @@
+* graphics
+* sound
+* peripherals, bluetooth, wifi...
