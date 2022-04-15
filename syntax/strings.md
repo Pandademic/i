@@ -36,6 +36,12 @@ A static `str32`; the number of characters in `...` is its max.
 ## `static t '...'` or `static t "..."`
 A static string of type `t`.
 
+## `'...'B` or `"..."B`
+`'...'` as a `u8` array.
+
+## `'...'b` or `"..."b`
+`'...'` as an `i8` array.
+
 ## `"$name"`, `"$$identifier_name"`, `"$@property_name"`, `"$&attribute_name"`, `"$(expression)"`
 String interpolation.
 

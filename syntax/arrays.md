@@ -1,130 +1,165 @@
 Arrays can only contain objects of the same type. Some of the operation here can obviously only work on dynamic arrays.
 
-## `[t]`
-The type of dynamic arrays containing items of type `t`.
+## `[`*`T`*`]`
+The type of dynamic arrays containing items of type *`T`*.
 
-## `n [t]`
-The type of static arrays with a max of `n` items of type `t`.
+## *`n`*` [`*`T`*`]`
+The type of static arrays with a max of *`n`* items of type *`T`*.
 
-## `[x, y, etc]`
-A dynamic array containing `x` at index `1`, `y` at index `2`, etc.
+## `[`*`x`*`, `*`y`*`, ...]`
+A dynamic array containing *`x`* at index `1`, *`y`* at index `2`, etc.
 
-## `t [x, y, etc]`
-A dynamic array containing items of type `t`: `x` at index `1`, `y` at index `2`, etc.
+## *`T`* `[`*`x`*`, `*`y`*`, ...]`
+A dynamic array containing items of type *`T`*: *`x`* at index `1`, *`y`* at index `2`, etc.
 
-## `n [x, y, etc]`
-A static array of a max of `n` items, containing `x` at index `1`, `y` at index `2`, etc, with the rest, if any, being zero`d out.
+## *`n`* `[`*`x`*`, `*`y`*`, ...]`
+A static array of a max of *`n`* items, containing *`x`* at index `1`, *`y`* at index `2`, etc, with the rest, if any, being zero`d out.
 
-## `t n [x, y, etc]`
-A static array of a max of `n` items, containing items of type `t`: `x` at index `1`, `y` at index `2`, etc, with the rest, if any, being zero`d out.
+## *`T`*` `*`n`* `[`*`x`*`, `*`y`*`, ...]`
+A static array of a max of *`n`* items, containing items of type *`T`*: *`x`* at index `1`, *`y`* at index `2`, etc, with the rest, if any, being zero`d out.
 
-## `static [x, y, etc]`
-A static array containing `x` at index `1`, `y` at index `2`, etc; and that many items is its max.
+## `static [`*`x`*`, `*`y`*`, ...]`
+A static array containing *`x`* at index `1`, *`y`* at index `2`, etc; and that many items is its max.
 
-## `static t [x, y, etc]`
-A static array of type `t`, containing `x` at index `1`, `y` at index `2`, etc; and that many items is its max.
+## `static `*`T`* `[`*`x`*`, `*`y`*`, ...]`
+A static array of type *`T`*, containing *`x`* at index `1`, *`y`* at index `2`, etc; and that many items is its max.
 
-## `'...'B` or `"..."B`
-`'...'` as a `u8` array.
+## `#`*`a`*
+The length of *`a`*.
 
-## `'...'b` or `"..."b`
-`'...'` as an `i8` array.
+## *`a`*`#`*`i`*
+The item in `array` at index *`i`* or `#`*`a`*` + `*`i`* if *`i`* is negative.
 
-## `#array`
-The length of `array`.
+## *`a`*`#`*`r`*
+A slice of *`a`* in range `r`.
 
-## `array#i`
-The item in `array` at `i`, or `#array + i` if `i` is negative.
+See *ranges.md*.
 
-## `array#a_range`
-A slice of `array`.
+## *`a`*`  at  `*`x`*
+An array of all indices of *`x`* in *`a`*.
 
-## `array at x`
-An array containing all indices of `x` in `array`.
+## *`a`*`  at  `*`sa`*
+An array of all indices of subarray *`sa`* in *`a`*.
 
-## `array at subarray`
-An array containing all indices of the subarray, `subarray` in `array`.
+## *`a`*`  at  `*`x`*`  =  `*`y`*
+Set all occurences of *`x`* in *`a`* to *`y`*.
 
-## `array at x = y`
-Set all occurences of `x` in `array` to `y`.
+## *`a`*`  at  `*`sa`*`  =  `*`y`*
+Set all occurences of subarray *`sa`* in *`a`* to new subarray *`y`*.
 
-## `array at subarray = new_subarray`
-Set all occurences of `subarray` in `array` to `new_subarray`.
+## *`a`*`..`*`x`*
+A copy of *`a`* with *`x`* at the end.
 
-## `array..x`
-A copy of `array` with `x` at the end.
+## *`x`*`..`*`a`*
+A copy of *`a`* with *`x`* at the beginning.
 
-## `array1..array2`
-An array resulting from the concatenation of `array1` and `array2` respectively.
+## *`a1`*`..`*`a2`*
+An array resulting from the concatenation of *`a1`* and *`a2`* respectively.
 
-## `array <- x`
-Add `x` to the end of `array`.
+## *`a`*`  <-  `*`x`*
+Insert *`x`* at the end of *`a`*.
 
-## `array1 <- array2`
-Insert each item in `array2` to the end of `array1`.
+## *`x`*`  ->  `*`a`*
+Insert *`x`* at the beginning of *`a`*.
 
-## `array#i <<- x`
-Add `x` after `array#i`.
+## *`a1`*`  <-  `*`a2`*
+Insert each item in *`a2`* to the end of *`a1`*.
 
-## `array1#i <<- array2`
-Insert each item in `array2` after `array1#i`.
+## *`a2`*`  ->  `*`a1`*
+Insert each item in *`a2`* to the beginning of *`a1`*.
 
-## `array1#a_range <<- array2`
-Insert each item in `array2` in the boundary of `array1#a_range`.
+## *`a`*`#`*`i`*`  <-  `*`x`*
+Insert *`x`* after *`a`*`#`*`i`*.
 
-## `array#i = x`
-Set `array#i` to `x`.
+## *`x`*`  ->  `*`a`*`#`*`i`*
+Insert *`x`* before *`a`*`#`*`i`*.
 
-## `array#a_range = subarray`
-Replace `array#a_range` with `subarray`, and return it.
+## *`a1`*`#`*`i`*`  <-  `*`a2`*
+Insert each item in *`a2`* after *`a1`*`#`*`i`*.
 
-## `less array`
-Delete the last item in `array` and return it.
+## *`a2`*`  ->  `*`a1`*`#`*`i`*
+Insert each item in *`a2`* before *`a1`*`#`*`i`*.
 
-## `delete array#i`
-Delete `array#i` and return it.
+## *`a`*`#`*`i`*`  =  `*`x`*
+Set *`a`*`#`*`i`* to *`x`*.
 
-## `delete array#a_range`
-Delete `array#a_range` and return it.
+## *`a`*`#`*`r`*`  =  `*`x`*
+Replace *`a`*`#`*`r`* with *`x`*, and return it.
 
-## `array where routine`
-An array where `routine` returns `true` for all items in `array`. `routine` takes an item and an index respectively.
+See *ranges.md*.
 
-## `array via routine`
-A copy of `array` where `routine` is applied to all items. `routine` takes an item and an index respectively.
+## `delete `*`a`*`#`*`i`*
+Delete the *`i`*-th item in *`a`* and return it.
 
-## `array via dictionary`
-```
-dictionary per k of v
-	array#k = v
-```
+## `delete `*`a`*`#`*`r`*
+Delete all of *`a`*'s items in range *`r`* and return them as an array of the same type.
 
-## `some array where routine`
-Whether `routine` returns `true` for at least one item in `array`.
+## `less `*`a`*
+Delete the last item in *`a`* and return it.
 
-## `all array where routine`
-Whether `routine` returns `true` for all items in `array`.
+## *`n`*`  less  `*`a`*
+Delete the last *`n`* items in *`a`* and return them as an array of the same type.
 
-## `no array where routine`
-Whether `routine` returns `false` for all items in `array`.
+## *`a`*`  where  `*`f`*
+An array where *`f`* returns `true` for all items in *`a`*. *`f`* must take an item and index respectively.
 
-## `array down routine`
-Start-to-end array reduction.
+See *routines.md*.
 
-## `array up routine`
-End-to-start array reduction.
+## *`f a`*
+An array where *`f`* is applied to all items in *`a`*. *`f`* must take an item and index respectively.
 
-## `reverse array`
-A reversed copy of `array`.
+See *routines.md*.
 
-## `sort array by routine`
-A copy of `array` sorted by `routine`.
+## *`a`*`  via  `*`d`*
+An array where each item in *`a`* is replaced with the value with the same index/key in dictionary *`d`*.
 
-## `flat(array, depth)`
-An array, `new_array`, where all items of all subarrays are inserted into `new_array` in place of the subarrays recursively up to depth `depth`.
+See *dictionaries.md*.
 
-## `flat array`
-`flat(array, 1)`.
+## `some `*`a`*
+Whether at least one item in *`a`* is truthy.
 
-## `x, y, etc = array`
-Array destructuring: `x = array#1`, `y = array#2`, etc.
+## `notsome `*`a`*
+Whether at least one item in *`a`* is falsy.
+
+## `some `*`n a`*
+Whether exactly *`n`* items in *`a`* are truthy.
+
+## `notsome `*`n a`*
+Whether exactly *`n`* items in *`a`* are falsy.
+
+## `some `*`r a`*
+Whether the number of truthy items in *`a`* is in range *`r`*.
+
+## `notsome `*`r a`*
+Whether the number of falsy items in *`a`* is in range *`r`*.
+
+## `all `*`a`*
+Whether all items in *`a`* are truthy.
+
+## `no `*`a`*
+Whether all items in *`a`* are falsy.
+
+## *`a`*`  down  `*`f`*
+An array where *`a`* is reduced by function *`f`* from beginning to end.
+
+## *`a`*`  up  `*`f`*
+An array where *`a`* is reduced by function *`f`* from end to beginning.
+
+## `reversed `*`a`*
+An array where the order of *`a`*'s items is reversed.
+
+## *`a`*`  by  `*`f`*
+An array where *`a`*'s items are sorted by function *`f`* which must be of one of these types: `(T, T) => bool`, `(int, int) => bool` or `((int, T), (int, T)) => bool` where *`T`* is the item type, and `int` is the index's. Returning `true` means sorting the item of the first argument after the second's.
+
+See *functions.md* and *tuples.md*.
+
+## `flat(`*`a`*`, `*`n`*`)`
+An array where all items of all subarrays in *`a`* are inserted into it in their place recursively up to depth *`n`*.
+
+## `flat `*`a`*
+An array where all items of all subarrays in *`a`* are inserted into it in their place.
+
+Equivalent to `flat(`*`a`*`, 1)`.
+
+## *`x`*`, `*`y`*`, etc = `*`a`*
+Array destructuring: *`x`*`  =  `*`a`*`#1`, *`y`*`  =  `*`a`*`#2`, etc.

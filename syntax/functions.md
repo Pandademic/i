@@ -1,28 +1,28 @@
-Parameters are omitdictionary except in some obvious cases. Routines that return `null` are called, procedures.
+Functions are overloadable. Parameters are omittable except in some obvious cases.
 
-## `type_parameters -> t`
-The type of synchronous routines that take `type_parameters`, which only contains types, and return a object of type `t`.
+## `type_parameters => t`
+The type of synchronous functions that take `type_parameters`, which only contains types, and return a object of type `t`.
 
-## `type_parameters -|`
-`type_parameters -> null`.
+## `type_parameters =|`
+`type_parameters => null`.
 
-## `async type_parameters -> t`
-The type of asynchronous routines that take `type_parameters`, which only contains types, and return a object of type `t`.
+## `async type_parameters => t`
+The type of asynchronous functions that take `type_parameters`, which only contains types, and return a object of type `t`.
 
-## `async type_parameters -|`
-`async type_parameters -> null`.
+## `async type_parameters =|`
+`async type_parameters => null`.
 
-## `parameters -> expression`
-A synchronous routine that takes `parameters`, and returns `expression`.
+## `parameters => expression`
+A synchronous function that takes `parameters`, and returns `expression`.
 
-## `parameters -|`
-`parameters -> null`.
+## `parameters =|`
+`parameters => null`.
 
-## `async parameters -> expression`
-An asynchronous routine that takes `parameters`, and returns `expression`.
+## `async parameters => expression`
+An asynchronous function that takes `parameters`, and returns `expression`.
 
-## `async parameters -|`
-`async parameters -> null`.
+## `async parameters =|`
+`async parameters => null`.
 
 ## Parameters
 Parameters can be:
@@ -30,7 +30,7 @@ Parameters can be:
 * `(x, y, etc)` — regular parameters
 * `<t, u, etc>` — generic parameters
 * `<t, u, etc> (x, y, etc)` — generic and regular parameters
-* `parameters: t` — parameters with a specified return value type—not valid in a routine type expression.
+* `parameters: t` — parameters with a specified return value type—not valid in a function type expression.
 
 Special parameter syntax:
 
@@ -50,6 +50,9 @@ Return `f` instead of calling it.
 ## `f(x, y=z, etc)`
 Call `f` with the argument, `x`, passed to the first parameter, and the argument, `z`, passed  to the parameter with the name, `y`, and return its return value. The parentheses can be omitted for single arguments.
 
+## *`c args`*
+Call each function in function collection *`c`* with `args` (which can be `()`), and return a collection with the same type, containing the respective return values.
+
 ## `call!`
 Block the process until `call` returns a value, then return that.
 
@@ -63,13 +66,13 @@ The function argument whose parameter is named, `x`—inside functions, or the c
 Return `x`.
 
 ## `f parameters = expression`
-`f = parameters -> expression`
+`f = parameters => expression`
 
 ## `async f parameters = expression`
-`f = async parameters -> expression`
+`f = async parameters => expression`
 
 ## `f parameters block`
-`f = parameters -> (block)` (see [Blocks](#blocks)).
+`f = parameters => (block)` (see [Blocks](#blocks)).
 
 ## `async f parameters block`
-`f = async parameters -> (block)`.
+`f = async parameters => (block)`.

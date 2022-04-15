@@ -23,7 +23,7 @@ Numeral examples:
 * `2.9979***8` — a decimal multiplied by 10 to the 8th (see [x *** y](#x--y-2))
 * `0x4.0f` — a hexadecimal with a point; note here that all kinds of numerals can have points, not just decimals
 
-Integer numerals are `int`s/`bigint`s, and floating-point numerals are `real`s/`bigreal`s.
+Integer numerals are `int`s/`bigint`s, and floating-point numerals are `real`s/`bigreal`s. `int` is the type of indices.
 
 Names referring to integers can be used in floating-point literals—e.g. `2.x`; in this example, if `x` is negative, the whole number will be negative, because `2` is positive, and vice versa.
 
