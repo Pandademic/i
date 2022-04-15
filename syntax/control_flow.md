@@ -1,31 +1,33 @@
-See [Streams](#streams) for for-in loop syntax. All loops return an array of evaluated `block`s in each iteration.
+See *streams.md* for for-in loop syntax. All expression loops return an array of evaluated blocks in each iteration. Also, see *blocks.md*.
 
-## `if x block`
-If `x` is true, evaluate `block`. This is always a statement.
+## `if x block` or `y if x`
+If `x` is true, evaluate `block`/`y`. This is always a statement.
 
-## `unless x block`
-`if (not x) block`.
+## `unless x block` or `y unless x`
+If `x` is false, evaluate `block`/`y`. This is always a statement.
 
-## `if x block else y`
-Evaluate `block` if `x` is true; `y` otherwise.
+## `if x block else z` or `y if x else z`
+Return `block`/`y` if `x` is true. `z` otherwise.
 
-## `unless x block else y`
-`if (not x) block else y`
+## `unless x block else y` or `y unless x else z`
+Return `block`/`y` if `x` is false. `z` otherwise.
 
-## `case o x => y z block`
-If `o == x`, return `y`; otherwise, if `o == z`, return `block`. Pattern matching is supported.
+## `case x x1 y1 x2 y2 ...`
+A switch statement/expression. If `x == x1`, return `y1`. otherwise, if `x == x2`, return `y2`. And so on. If `x1`, `x2`, etc are patterns, pattern matching happens. Enclosing them in parentheses, treats them as regular values.
 
-## `while x block`
-While `x` is true, evaluate `block`.
+## `while x block` or `y while x`
+While `x` is true, evaluate `block`/`y`.
 
-## `until x block`
-`while (not x) block`.
+## `until x block` or `y until x`
+While `x` is false, evaluate `block`/`y`.
 
-## `forever block`
-`while true block`.
+## `forever block` or `x forever`
+Keep evaluating `block`/`x`.
 
-## `whenever x block`
-`forever if x block`.
+## `whenever x block` or `y whenever x`
+Keep checking if `x` is true, and evaluate `block`/`y` whenever it is.
+
+Equivalent to `forever if x block`.
 
 ## `do x` or `block`
 Evaluate `x` or `block` inside a subscope.
@@ -37,28 +39,4 @@ Evaluate `x`, `n` times.
 Break out of the current loop.
 
 ## `again`
-Skip to the next iteration of the current loop.
-
-## `x if y`
-`x` if `y` is true. This is always a statement.
-
-## `x if y else z`
-`x` if `y` is true; `z` otherwise.
-
-## `x unless y else z`
-`x if not y else z`.
-
-## `x else y`
-`x` if it is true; `y` otherwise.
-
-## `x while y`
-An array, adding `x` to itself while `y` is true.
-
-## `x unless y`
-`x while not y`.
-
-## `x forever`
-`forever do x`.
-
-## `x whenever y`
-`whenever y do x`.
+Skip to the current iteration of the current loop.
