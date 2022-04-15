@@ -6,6 +6,8 @@ The enumerator type.
 ## *`e`*``
 Enumerator *`e`*'s enumeral type.
 
+TODO
+
 ## `enum e x, y, z=v, etc`
 An enumerator named, `e`, with enumerals: `x=0`, `y=1`, `z=v`, etc.
 

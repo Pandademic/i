@@ -50,8 +50,8 @@ Return `f` instead of calling it.
 ## `f(x, y=z, etc)`
 Call `f` with the argument, `x`, passed to the first parameter, and the argument, `z`, passed  to the parameter with the name, `y`, and return its return value. The parentheses can be omitted for single arguments.
 
-## *`c args`*
-Call each function in function collection *`c`* with `args` (which can be `()`), and return a collection with the same type, containing the respective return values.
+## `c args`
+Call each function in function collection `c` with `args` (which can be `()`), and return a collection with the same type, containing the respective return values.
 
 ## `call!`
 Block the process until `call` returns a value, then return that.
