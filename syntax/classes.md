@@ -1,36 +1,38 @@
-Classes are user-defined types. Class parameters or constructor parameters follow the same rules of routine parameters.
+Classes are user-defined types. Class parameters follow the same rules as function parameters (see *functions.md/Parameters*).
 
-## `the c parameters expression`
-A class named, `c`, whose constructor takes `parameters`, and evaluates `expression` in its scope.
+## `the c params x`
+A class named `c`, whose constructor takes `params`, and evaluates expression `x` in its scope.
 
 ## `default c`
-`c`'s default value identifier (see [Identifiers](#identifiers)); when assigned (`default c = x`), declared identifiers of type `c` are automatically assigned it.
+`c`'s default value identifier (see *identifiers.md*); when assigned (`default c = x`), declared-but-not-defined identifiers of type `c` are automatically assigned it.
 
 ## Class Parameters
 Class parameters look like `@x` or `&x` where `x` is the name of the parameter and property/attribute to be assigned whatever argument is passed to the parameter, when the class is instanciated.
 
 ## `this`
-The instance; accessable inside a class' scope.
+The instance; accessible inside a class' scope.
 
 ## `@x`
-The property named, `x`; accessable inside a class' scope.
+The property named `x`; accessible inside a class' scope.
 
 ## `&x`
-The attribute named, `x`; accessable inside a class' scope.
+The attribute named `x`; accessible inside a class' scope.
 
-## `c arguments`
+## `c args`
 A new instance of `c`.
 
 ## `i.x`
-The property, `x`, of the instance, `i`.
+The property `x` of instance `i`.
 
 ## `c.x`
-The attribute, `x`, of the class, `c`.
+The attribute `x` of class `c`.
 
 ## Inheritance
-Inhertitance can be achieved by expanding an instance of the superclass inside the subclass, like:
+Inheritance can be achieved by expanding an instance of the superclass inside the subclass, as in:
 
 ```
-the subclass parameters
-	* superclass arguments
+the subclass params
+	* superclass args
 ```
+
+See *collections.md*.
