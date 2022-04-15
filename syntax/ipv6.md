@@ -1,6 +1,6 @@
 # IPv6 Packets
 
-IPv6 packets are mudictionary.
+IPv6 packets are mutable.
 
 ## `ipv6packet`
 The IPv6 packet type.
