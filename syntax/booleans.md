@@ -62,7 +62,7 @@ Whether `x` is greater than or equals `y`.
 `x >= y and y >= z`.
 
 ## `not x`
-`false` if `x` is true; `true` otherwise.
+`false` if `x` is true. `true` otherwise.
 
 ## `x and y`
 Whether both `x` and `y` are true.
@@ -71,7 +71,7 @@ Whether both `x` and `y` are true.
 Whether `x` or `y` is true.
 
 ## `x xor y`
-Whether only one of `x` and `y` is true.
+Whether only one of `x` or `y` is true.
 
 ## `invert x`
 `x = not x`.

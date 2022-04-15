@@ -4,25 +4,25 @@ Functions are overloadable. Parameters are omittable except in some obvious case
 The type of synchronous functions that take `type_parameters`, which only contains types, and return a object of type `t`.
 
 ## `type_parameters =|`
-`type_parameters => null`.
+The type of synchronous functions that take `type_parameters`, which only contains types, and return nothing.
 
 ## `async type_parameters => t`
-The type of asynchronous functions that take `type_parameters`, which only contains types, and return a object of type `t`.
+The type of asynchronous functions that take `type_parameters`, which only contains types, and return an object of type `t`.
 
 ## `async type_parameters =|`
-`async type_parameters => null`.
+The type of asynchronous functions that take `type_parameters`, which only contains types, and return nothing.
 
 ## `parameters => expression`
 A synchronous function that takes `parameters`, and returns `expression`.
 
 ## `parameters =|`
-`parameters => null`.
+A synchronous function that takes `parameters`, and returns nothing.
 
 ## `async parameters => expression`
 An asynchronous function that takes `parameters`, and returns `expression`.
 
 ## `async parameters =|`
-`async parameters => null`.
+An asynchronous function that takes `parameters`, and returns nothing.
 
 ## Parameters
 Parameters can be:
