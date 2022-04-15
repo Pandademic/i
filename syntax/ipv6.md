@@ -44,13 +44,13 @@ The IPv6 address type.
 An IPv6 address from the collection, `c`.
 
 ## `a#i`
-The `i`th of 4 divided numbers of the address, `a`.
+The `i`th of the 4 divided numbers of the address, `a`.
 
-## `a#a_range`
-An array of the divided numbers of `a` in the range, `a_range`.
+## `a#r`
+An array of the divided numbers of `a` in range, `r`.
 
 ## `a#i = x`
 Set `a#i` to `x`.
 
-## `a#a_range = x`
-Set `a#a_range` to the array, `x`.
+## `a#r = x`
+Set `a#r` to the array, `x`.
